@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Fleur+De+Leah&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat: 'Montserrat', sans serif;
+    --fuente-krona: 'Krona One', sans serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /*height: 100vh;*/
+    box-sizing: border-box;
+}
+
+.header-menu {
+    padding: 30px 0px;
+    gap: 80px;
+}
+
+.header-menu-link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.header-menu-link:hover{
+    color: var(--color-hover);
+
+}
+
+.header-presentacion-contenido {
+    padding: 30px 180px;
+}
+
+.header-presentacion-imagen {
+    width: 50%;
+}
+
+.header-presentacion-contenido_titulo {
+
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.header-presentacion-titulo-destaque {
+    color: var(--color-terciario);
+}
+
+
+.header-presentacion-enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.header-presentacion-enlaces_link {
+    width: 50%;
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size:1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.header-presentacion-enlaces_link:hover {
+    background-color: var(--color-hover);
+    color: #000000;
+}
+
+#portafolio {
+    padding: 100px 0px;
+}
+
+.portafolio-titulo {
+    font-family: var(--fuente-montserrat);
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--color-terciario);
+    padding: 0px 0px 50px 0px;
+}
+
+.contacto-link {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+@media (max-width: 500px){
+    .header-menu-link {
+        font-size: 17px;
+    }
+    .header-presentacion-imagen {
+        margin: 50px 0px;
+    }
+    .header-presentacion-contenido {
+        padding: 10px 20px;
+    }
+
+    .portafolio-contenido {
+        margin: 120px 0px 0px 0px;
+    }
+
+    .header-presentacion-contenido_titulo {
+        font-size: 25px;
+    }
+}   
